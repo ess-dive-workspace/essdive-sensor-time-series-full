@@ -1,0 +1,5 @@
+column_or_row_name,unit,definition,measured_variable,method_id,location_id,column_or_row_long_name,data_type,missing_value_code,material,sensor_id,treatment_id,unit_basis,statistic_measurement,statistic_spatial,statistic_temporal,representation_temporal,notes
+datetime_measured,N/A,"Date and time of measurement, to known specificity.",N/A,N/A,N/A,N/A,datetime,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+datetime_measured_start,N/A,"Date and time of the start of the measurement, to known specificity.",N/A,N/A,N/A,N/A,datetime,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+datetime_measured_end,N/A,"Date and time of the end of the measurement, to known specificity.",N/A,N/A,N/A,N/A,datetime,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
+notes,N/A,Free text notes field.,N/A,N/A,N/A,N/A,text,,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A
