@@ -20,7 +20,7 @@
 - **Format:** comma-separated value (.csv)
 - Use the template and term guide to structure data files. 
     - Required fields include:
-        - `{measurement column}`
+        - `{measurement_column_name}`
     - Conditionally required fields include:
         - `datetime_measured`
             - Condition: Required to include either `datetime_measured` or `atetime_measured_start` and `datetime_measured_end`
