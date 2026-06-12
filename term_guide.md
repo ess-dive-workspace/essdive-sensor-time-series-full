@@ -438,7 +438,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|optional|
 |format|free text|
 |unit|N/A|
-|definition|Basis for how the measurement values are quantified (e.g., “as nitrate” vs. “as nitrogen”; “per kg dry sediment”). Provide if relevant.|
+|definition|Basis for how the measurement values are quantified (e.g., “as nitrate” vs. “as nitrogen”; “per kg dry sediment”; “relative to Vienna Pee Dee Belemnite”). Provide if relevant.|
 |example|as carbon|
 |additional guidance|This information is important for the correct interpretation of the measurement value.|
 
