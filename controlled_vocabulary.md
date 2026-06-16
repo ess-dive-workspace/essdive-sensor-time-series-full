@@ -27,7 +27,7 @@ The ESS-DIVE Sensor Time Series - Full Reporting Format controlled vocabularies 
 ---
 ## Data Dictionary File
 ### unit
-The controlled vocabulary for the unit is based on the [Unified Code of Unified Measurements (UCUM)](https://ucum.org/ucum). The Definition provided for the controlled vocabulary is the UCUM code.
+The controlled vocabulary for the unit is based on the [Unified Code of Unified Measurements (UCUM)](https://ucum.org/ucum) (pdf). The Definition provided for the controlled vocabulary is the UCUM code.
 |Controlled Vocabulary|Definition|
 |:----------------------------------------------------|:----------------------------------------------------|
 |degree Celsius|Cel|
