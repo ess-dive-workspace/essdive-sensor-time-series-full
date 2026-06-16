@@ -1,5 +1,5 @@
 # Term Guide
-The  Sensor Time Series - Full Reporting Format terms are defined below, including  whether that term is required, conditionally required, or optional, a brief definition, formatting requirements, an example, and additional guidance. Additional required terms are included in the [Location Metadata Reporting Format](https://github.com/ess-dive-workspace/essdive-location-metadata/blob/release-v2.0.0/term_guide.md).
+The  Sensor Time Series - Full Reporting Format terms are defined below, including  whether that term is required, a brief definition, formatting requirements, an example, and additional guidance. Additional required terms are included in the [Location Metadata Reporting Format](https://github.com/ess-dive-workspace/essdive-location-metadata/blob/release-v2.0.0/term_guide.md).
 
 A single asterisk (*) below marks terms that are required. Two asterisks (**) mark fields that are conditionally required.
 
@@ -148,7 +148,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|required|
 |format|free text|
 |unit|N/A|
-|definition|Description of the attribute identifier provided within the attr_id field|
+|definition|Description of the attribute identifier provided within the `attr_id` field|
 |example|N/A|
 |additional guidance|N/A|
 
@@ -448,7 +448,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|optional|
 |format|[Controlled vocabulary](https://github.com/ess-dive-workspace/essdive-sensor-time-series-full/blob/release-v1.0.0/controlled_vocabulary.md#statistic)|
 |unit|N/A|
-|definition|Statistic description, if applicable. This term is only used for {measurement_column_name} headers / rows if the measured value represents repeated observations of the same scientifically-equivalent spatial location and/or temporal period (e.g., replicates), or for general uncertainty in the measurement itself.|
+|definition|Statistic description, if applicable. This term is only used for `{measurement_column_name}` headers / rows if the measured value represents repeated observations of the same scientifically-equivalent spatial location and/or temporal period (e.g., replicates), or for general uncertainty in the measurement itself.|
 |example|mean|
 |additional guidance|A measurement statistic typically describes variation or uncertainty in the measurement. This can be obtained / reported by an instrument or calculated via replicates. Use the spatial and / or temporal statistical descriptions, if the variability is due to multiple scientifically important locations or time periods.|
 
@@ -458,7 +458,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|optional|
 |format|[Controlled vocabulary](https://github.com/ess-dive-workspace/essdive-sensor-time-series-full/blob/release-v1.0.0/controlled_vocabulary.md#statistic)|
 |unit|N/A|
-|definition|Statistical description, if applicable. This term is only used for {measurement_column_name} headers / rows if the measured value represents a combination of individual observations from separate locations to represent a larger location.|
+|definition|Statistical description, if applicable. This term is only used for `{measurement_column_name}` headers / rows if the measured value represents a combination of individual observations from separate locations to represent a larger location.|
 |example|mean|
 |additional guidance|The spatial statistic should be used to describe measurement values that are a combination of separate spatial locations.|
 
@@ -468,7 +468,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|optional|
 |format|[Controlled vocabulary](https://github.com/ess-dive-workspace/essdive-sensor-time-series-full/blob/release-v1.0.0/controlled_vocabulary.md#statistic)|
 |unit|N/A|
-|definition|Statistic description, if applicable. This term is only used for {measurement_column_name} headers / rows if the measured value represents a combination of individual observations at different times to represent a larger time period. In most cases, a corresponding representation_temporal should be specified.|
+|definition|Statistic description, if applicable. This term is only used for `{measurement_column_name}` headers / rows if the measured value represents a combination of individual observations at different times to represent a larger time period. In most cases, a corresponding `representation_temporal` should be specified.|
 |example|mean|
 |additional guidance|The temporal statistic should be used when the measurement value is a combination of individual measurements made at separate times.|
 
@@ -478,7 +478,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |requirement|optional|
 |format|[Controlled vocabulary](https://github.com/ess-dive-workspace/essdive-sensor-time-series-full/blob/release-v1.0.0/controlled_vocabulary.md#representation_temporal)|
 |unit|N/A|
-|definition|Temporal representativeness of the measurement, if applicable. This field is only used for data dictionary rows where the column_or_row_name entry is a measured variable. In many cases, a corresponding statistic_temporal should be specified. The temporal representation will be considered instantaneous if no value is provided and datetime_measured is reported (instead of datetime_measured_start and datetime_measured_end).|
+|definition|Temporal representativeness of the measurement, if applicable. This field is only used for data dictionary rows where the `column_or_row_name` entry is a measured variable. In many cases, a corresponding `statistic_temporal` should be specified. The temporal representation will be considered instantaneous if no value is provided and `datetime_measured` is reported (instead of `datetime_measured_start` and `datetime_measured_end`).|
 |example|month|
 |additional guidance|The temporal representation should be used when the measurement value is not an instantaneous observation and/or represents a non-instantaneous time period. <br><br> If `datetime_measured_start` and `datetime_measured_end` are reported and a temporal representation is applicable, the temporal representation should match the temporal difference.|
 
