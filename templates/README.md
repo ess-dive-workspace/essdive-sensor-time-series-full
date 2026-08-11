@@ -3,3 +3,5 @@
 - [Methods and Attributes File Template](/templates/template_sensor_attr.csv)
 - [File Level Metadata File Template](/templates/template_sensor_full_flmd.csv)
 - [Data Dictionary File Template](/templates/template_sensor_full_dd.csv)
+
+Note: The order of the terms in their respective files can be modified to suit your preference.
