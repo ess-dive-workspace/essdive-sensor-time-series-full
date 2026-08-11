@@ -1,6 +1,8 @@
 # Term Guide
 The  Sensor Time Series - Full Reporting Format terms are defined below, including  whether that term is required, a brief definition, formatting requirements, an example, and additional guidance. Additional required terms are included in the [Location Metadata Reporting Format](https://github.com/ess-dive-workspace/essdive-location-metadata/blob/release-v2.0.0/term_guide.md).
 
+If a user includes terms that are not governed by this RF in their files (i.e., user-defined metadata columns), those terms will NOT be parsed in ESS-DIVE’s internal tools or independently verified during schematization. The information may be included in the data schema as an unidentified piece of metadata.
+
 A single asterisk (*) below marks terms that are required. Two asterisks (**) mark terms that are conditionally required.
 
 ### Terms of the reporting format:
