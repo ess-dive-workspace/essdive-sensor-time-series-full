@@ -58,7 +58,7 @@
 ### DATA DICTIONARY FILES
 - **Purpose:** lists and describes `column_or_row_name` to provide metadata for each column header.
 - **Format:** comma-separated value (.csv)
-- **Governed by:** [File Level Metadata (FLMD) Reporting Format](https://github.com/ess-dive-workspace/essdive-file-level-metadata) with required modifications described in this Full Sensor Time Series Reporting Format (see details below).
+- **Governed by:** [File Level Metadata (FLMD) Reporting Format](https://github.com/ess-dive-workspace/essdive-file-level-metadata) with required modifications described in this Sensor Time Series - Full Reporting Format (see details below).
 - Use the Sensor Time - Full Series Reporting Format template to structure data dictionary (DD) files. Name the file “dd.csv” or with the suffix “_dd.csv”. The term guide has term descriptions and requirements. _Extension (new) or modified terms that build on the DD structure governed by the FLMD Reporting Format are marked with a plus below._
     - Required terms include:
         - `column_or_row_name`
@@ -93,7 +93,7 @@
 ### FILE LEVEL METADATA FILE
 - **Purpose:** lists and describes `file_name` to provide metadata for each file.
 - **Format:** comma-separated value (.csv)
-- **Governed by:** File Level Metadata (FLMD) Reporting Format available at https://github.com/ess-dive-workspace/essdive-file-level-metadata, with required modifications detailed in this Sensor Time Series - Full Reporting Format.
+- **Governed by:** [File Level Metadata (FLMD) Reporting Format](https://github.com/ess-dive-workspace/essdive-file-level-metadata) with required modifications detailed in this Sensor Time Series - Full Reporting Format.
 - Use the Sensor Time - Full Series Reporting Format template to structure FLMD files. Name the file “flmd.csv” or with the suffix “_flmd.csv”. The term guide has term descriptions and requirements. _Extension (new) or modified terms that build on the FLMD structure governed by the FLMD Reporting Format are marked with a plus below._
     - Required terms include:
         - `file_name`
@@ -112,7 +112,7 @@
 ### LOCATIONS FILE
 - **Purpose:**  lists and describes `location_id` to provide metadata for each location.
 - **Format:** comma-separated value (.csv)
-- **Governed by:** Location Metadata Reporting Format available at https://github.com/ess-dive-workspace/essdive-location-metadata/tree/release-v2.0.0
+- **Governed by:** [Location Metadata Reporting Format](https://github.com/ess-dive-workspace/essdive-location-metadata/tree/release-v2.0.0)
 
 ## ADDITIONAL CONSIDERATIONS
 - You are encouraged to include raw data files, sensor/instrument specification PDFs from manufacturers, code used for data collection or data processing, and/or links to relevant content (i.e., GitHub, Zenodo). The RF does not provide specific guidance on formats of these additional files. 
