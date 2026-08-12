@@ -255,7 +255,7 @@ A single asterisk (*) below marks terms that are required. Two asterisks (**) ma
 |:----------------------------------------------------|:----------------------------------------------------|
 |requirement|required|
 |format|_Controlled vocabulary to be updated once revisions are finalized._|
-|definition|Identify if an ESS-DIVE Reporting Format or any other data or metadata standard was applied to the data file. Standard names for the ESS-DIVE reporting formats are available in the [Standard FLMD Term List](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/RF_FLMD_Standard_Terms.csv).| 
+|definition|Identify if an ESS-DIVE Reporting Format or any other data or metadata standard was applied to the data file.| 
 |example|ESS-DIVE Sensor Time Series - Full Reporting Format v1|
 |additional guidance|For any files following the Sensor Time Series - Full reporting format, including data, methods and attributes, and data dictionary, provide "ESS-DIVE Sensor Time Series - Full Reporting Format v1" in the `standard` term.|
 
