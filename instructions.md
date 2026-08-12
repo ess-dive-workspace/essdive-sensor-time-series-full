@@ -34,7 +34,7 @@
 - Timestamps cannot be repeated in a file. Each measurement column is a time series.
 
 ## METHODS AND ATTRIBUTES FILE
-- **Purpose:** lists and describes `attr_id` (attribute ID), which include IDs used in the `{measurement_column_name}_flag` (data file) columns and `method_id`, `sensor_id`, and`treatment_id` used in the data dictionary file column.
+- **Purpose:** lists and describes `attr_id` (attribute ID), including IDs used in the `{measurement_column_name}_flag` columns in the data file(s), as well as the `method_id`, `sensor_id`, and `treatment_id` columns in the data dictionary file(s).
 - **Format:** comma-separated value (.csv)
 - Use the template and term guide to generate a methods and attributes file. Name the file “`sensor_attr.csv`” or with the suffix  “`_sensor_attr.csv`”.
      - Required terms include:
@@ -51,14 +51,14 @@
          - `sensor_serial_number`
  - The `attr_id` must be unique within the file.
  - The optional terms you choose to populate should be determined by the `attr_type` for which you are providing information. For example, `treatment_id` is unlikely to have `sensor_serial_number` populated.
- - The division of what is considered `method_id` versus flag versus `treatment_id` versus `sensor_id` information is dependent upon the data and the research purpose(s). For example, a user might choose to put all methods information together in a method_id and not use the other attr_type options. A user might choose to use one method_id for an overall summary of the method and then further contextualize that information with a separate method_id for each sensor that was used. 
+ - The division of what is considered `method_id` versus flag versus `treatment_id` versus `sensor_id` information is dependent upon the data and the research purpose(s). For example, a user might choose to put all methods information together in a `method_id` and not use the other `attr_type` options. A user might choose to use one `method_id` for an overall summary of the method and then further contextualize that information with a separate `method_id` for each sensor that was used. 
 
 
 ## FILES GOVERNED BY OTHER REPORTING FORMATS
 ### DATA DICTIONARY FILES
-- **Purpose:** lists and describes `column_or_row_name` to provide metadata for each column/row header.
+- **Purpose:** lists and describes `column_or_row_name` to provide metadata for each column header.
 - **Format:** comma-separated value (.csv)
-- **Governed by:** File Level Metadata (FLMD) Reporting Format available at https://github.com/ess-dive-workspace/essdive-file-level-metadata, with required modifications detailed in this Sensor Time Series - Full Reporting Format (see details below).
+- **Governed by:** [File Level Metadata (FLMD) Reporting Format](https://github.com/ess-dive-workspace/essdive-file-level-metadata) with required modifications described in this Full Sensor Time Series Reporting Format (see details below).
 - Use the Sensor Time - Full Series Reporting Format template to structure data dictionary (DD) files. Name the file “dd.csv” or with the suffix “_dd.csv”. The term guide has term descriptions and requirements. _Extension (new) or modified terms that build on the DD structure governed by the FLMD Reporting Format are marked with a plus below._
     - Required terms include:
         - `column_or_row_name`
@@ -72,7 +72,7 @@
         - sensor_id+
         - treatment_id+
         - `column_or_row_long_name`
-        - `data_type`
+        - `data_type`+
         - `missing_value_code`
         - `unit_basis`+
         - `representation_temporal`+
@@ -86,7 +86,9 @@
         - `notes`+
 - Method IDs and treatment IDs must be defined in the Methods and Attributes File.
 - The data dictionary template includes definitions for the required and optional terms. These definitions must be used as-is in the `definition` column when you create the data dictionaries for your data package.
-- Column headers defined in the DD cannot be repeated in the same DD. If column headers have different metadata across data files (e.g., a different `definition` was used across data files, but the column header did not change), the data files must use separate DD files.
+- Column names (`column_or_row_name`) defined in the DD cannot be repeated in the same DD. 
+    - If column headers have different metadata across data files (e.g., a different unit or definition) but the column name does not change, the data files must use separate DD files, i.e., there must be a specific DD file per data file.
+- If your dataset contains other data dictionaries, the data dictionaries associated with these Sensor Time Series - Full Reporting Format files must be separate.
 
 ### FILE LEVEL METADATA FILE
 - **Purpose:** lists and describes `file_name` to provide metadata for each file.
